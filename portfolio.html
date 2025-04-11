@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dasari Pavan Kumar - Portfolio</title>
+  <link rel="shortcut icon" href="icon-portfolio-blue-logo.jpg" type="image/x-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Fixed Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo"><a href="#home">Personal Profile</a></div>
+      <!-- Hamburger Menu Toggle for Mobile -->
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Combined Hero & About Section -->
+  <header id="home" class="hero-about-section">
+    <div class="hero-about-container">
+      <div class="hero-image">
+        <img src="myphoto.jpeg" alt="Pavan Kumar">
+      </div>
+      <div class="hero-content">
+        <h1 class="fade-in">Dasari Pavan Kumar</h1>
+        <p class="tagline slide-up">Web Developer & UI Designer</p>
+        <p class="about-text fade-in">
+          Hello! I'm Dasari Pavan Kumar, a passionate Web Developer & UI Designer dedicated to crafting engaging and user-friendly digital experiences. With a solid foundation in front-end technologies like HTML, CSS, and JavaScript, and expertise in modern frameworks such as React, I transform ideas into visually stunning and responsive websites.
+        </p>
+        <a href="#contact" class="btn hire-btn fade-in">Hire Me</a>
+        <div class="hero-social fade-in">
+          <a href="mailto:pavankumardasari8639@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/BuildsByPavan" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/pavan-kumar-dasari-66903a251" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <!-- Dropdown for Skills Filter -->
+      <div class="dropdown">
+        <button class="dropbtn">Filter Skills</button>
+        <div class="dropdown-content">
+          <label><input type="checkbox" value="frontend" class="skill-filter-checkbox"> Frontend</label>
+          <label><input type="checkbox" value="backend" class="skill-filter-checkbox"> Backend</label>
+          <label><input type="checkbox" value="database" class="skill-filter-checkbox"> Database</label>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-category="frontend">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+          <p>Semantic markup, accessibility, and modern features</p>
+        </div>
+        <div class="skill-card" data-category="frontend">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS</h3>
+          <p>Responsive design, Flexbox, Grid, and animations</p>
+        </div>
+        <div class="skill-card" data-category="frontend">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <p>Dynamic scripting, ES6+, and client-side interactivity</p>
+        </div>
+        <div class="skill-card" data-category="frontend">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+          <p>Component-based architecture, hooks, and state management</p>
+        </div>
+        <div class="skill-card" data-category="backend">
+          <i class="fas fa-server"></i>
+          <h3>Express.js</h3>
+          <p>Fast, unopinionated web framework for Node.js</p>
+        </div>
+        <div class="skill-card" data-category="backend">
+          <i class="fab fa-node-js"></i>
+          <h3>Node.js</h3>
+          <p>Server-side scripting and API development</p>
+        </div>
+        <div class="skill-card" data-category="database">
+          <i class="fas fa-database"></i>
+          <h3>MongoDB</h3>
+          <p>Document-based NoSQL database management</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <!-- Dropdown for Projects Filter -->
+      <div class="dropdown">
+        <button class="dropbtn">Filter Projects</button>
+        <div class="dropdown-content">
+          <label><input type="checkbox" value="frontend" class="project-filter-checkbox"> Frontend</label>
+          <label><input type="checkbox" value="backend" class="project-filter-checkbox"> Backend</label>
+          <label><input type="checkbox" value="fullstack" class="project-filter-checkbox"> Fullstack</label>
+        </div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="fullstack">
+          <div class="project-details">
+            <img src="security.png" style="width: 200px;" alt="Password-Manager-project"> 
+            <h3>Password-Manager</h3>
+            <div class="tech-stack">
+              <span>React+Vite</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>Vanilla CSS</span>
+              <span>Express.js</span>
+              <span>MongoDB(Mongoose-ODM)</span>
+            </div>
+            <p>Manages passwords with user authentication and API integration.</p>
+            <div class="project-links">
+              <a href="https://password-manager-ap.netlify.app/" class="btn">Live Demo</a>
+              <a href="https://github.com/BuildsByPavan" class="btn secondary">View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="frontend">
+          <div class="project-details">
+            <img src="countries.png" style="width: 200px;" alt="Countries">
+            <h3>Rest-Countries</h3>
+            <div class="tech-stack">
+              <span>React+Parcel</span>
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>Vanilla CSS</span>
+              <span>Countries API Rest Client</span>
+            </div>
+            <p>Real-time countries list with details using REST API.</p>
+            <div class="project-links">
+              <a href="https://country-profile.netlify.app/" class="btn">Live Demo</a>
+              <a href="https://github.com/BuildsByPavan/Countries-Api" class="btn secondary">View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="frontend">
+          <div class="project-details">
+            <img src="Sun.svg" style="width: 200px;" alt="Focus on today">
+            <h3>Focus-On-Today</h3>
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>JavaScript</span>
+              <span>Vanilla CSS</span>
+              <span>Local Storage</span>
+            </div>
+            <p>Managing Daily goals stored on local storage.</p>
+            <div class="project-links">
+              <a href="https://focus-daily-tasks.netlify.app/" class="btn">Live Demo</a>
+              <a href="https://github.com/BuildsByPavan/Focus-on-Today" class="btn secondary">View Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="frontend">
+          <div class="project-details">
+            <img src="greeting.png" style="width: 200px;" alt="Focus on today">
+            <h3>Greeting Card</h3>
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+            </div>
+            <p>Managing Daily goals stored on local storage.</p>
+            <div class="project-links">
+              <a href="https://mahashivaratree.netlify.app/" class="btn">Live Demo</a>
+              <a href="https://github.com/BuildsByPavan/GreetingCard" class="btn secondary">View Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="mailto:pavankumardasari8639@gmail.com" method="POST" enctype="multipart/form-data">
+        <div class="form-field">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-field">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-field">
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer with Social Media Links -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Dasari Pavan Kumar. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="mailto:pavankumardasari8639@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/BuildsByPavan" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/pavan-kumar-dasari-66903a251" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

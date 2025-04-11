@@ -407,7 +407,12 @@ footer {
   .hero-about-container {
     flex-direction: column;
     text-align: center;
-    margin-top: -50px;
+   
+  }
+  .hero-about-section {
+   
+    padding: 32px 20px;
+    
   }
   .hero-image img {
     height: 280px;
